@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - StockTrack</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">StockTrack</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="login.html" class="nav-link">Login</a>
+                <a href="register.html" class="nav-link">Register</a>
+                <a href="profile.html" class="nav-link">Profile</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+                <a href="/logout" class="nav-link">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="form-section">
+            <h2 class="form-title">Welcome, {{ user['name'] }}!</h2>
+            <p>Email: {{ user['email'] }}</p>
+            <p>Username: {{ session['username'] }}</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 StockTrack</p>
+    </footer>
+
+</body>
+</html>

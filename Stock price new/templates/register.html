@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Stock Price Prediction</title>
+    <link rel="stylesheet" type="text/css" href="static/css/register_style.css">
+</head>
+<body>
+    <header>
+        <h1>Create a New Account</h1>
+    </header>
+
+    <main>
+        <!-- Social Media Login Buttons -->
+        <div class="social-buttons">
+           <a href="https://accounts.google.com/"> <button class="social-button google"><img src="image/New-Google-Logo-497x500.webp" alt="Google">Google</button></a>
+            <a href="https://x.com/?lang=en"><button class="social-button twitter"><img src="image/220px-X_logo_2023.svg.webp" alt="Twitter">Twitter</button></a>
+           <a href="https://www.facebook.com/"> <button class="social-button facebook"><img src="image/250px-2023_Facebook_icon.svg.webp" alt="Facebook">Facebook</button>
+        </div>
+
+        <!-- Divider -->
+        <div class="or-divider">
+            <span>or</span>
+        </div>
+
+        <!-- Registration Form -->
+        <form id="register-form" method="POST">
+            <!-- Username Field -->
+            <label for="username">First Name</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your first name">
+
+            <!-- Last Name Field -->
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required placeholder="Enter your last name">
+
+            <!-- Email Field -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <!-- Mobile Number Field -->
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" required placeholder="Enter your mobile number" pattern="^\d{10}$" title="Please enter a valid 10-digit phone number">
+
+            <!-- Password Field -->
+            <label for="password">Password (6+ characters)</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+
+            <!-- Confirm Password Field -->
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" required placeholder="Confirm your password">
+
+            <!-- Submit Button -->
+            <button type="submit">Continue with Email</button>
+        </form>
+
+        <p>Already have an account? <a href="login.html">Log in</a></p>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="mailto:support@example.com" class="footer-link">Contact Us</a>
+            <a href="help.html" class="footer-link">Help & Support</a>
+        </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
+
+
